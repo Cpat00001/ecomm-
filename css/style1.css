@@ -1,0 +1,119 @@
+body{
+	background:linear-gradient(to right,rgb(92, 85, 214),rgb(64, 58, 168));
+	}
+h1,h2,h3,h4{
+	color:black;
+	}
+#header{
+	background-color:rgb(166, 185, 216);
+    }
+#one{
+	height:auto;
+	background-color:rgb(15,73,168);
+	color:white;
+}
+#registerform{
+	clear:none;
+}
+#two{
+	height:75%;
+	background-color:rgb(119, 143, 183);
+	text-align: center;
+}
+#three{
+	height:75%;
+	background-color:rgb(15, 73, 168);
+}
+#form{
+	float:right;
+	width:30%;
+	color:white;
+}
+
+#four{
+	background-color:rgb(193, 49, 44);
+	height:300px;
+}
+#five{
+	background-color:rgb(229, 78, 73);
+	height:300px;
+}
+#six{
+	background-color:rgb(193, 49, 44);
+	height:300px;
+}
+#footer1{
+	text-align:center;
+	color: white;
+}
+#footer2{
+	text-align:left;
+	color:white;
+}
+#jumbo1{
+	width: 80%;
+	height:auto;
+	margin: 3%;
+	text-align:center;
+	background-color:rgb(221,82,96);
+}
+#homediv21{
+	text-align:center;
+	
+}
+/* +++++++++++++++++++++ row in the middle +++++++++++++++++++++*/
+#div1{
+  height:75%;
+  background-color:rgb(15,73,168);
+ 
+}
+#div1div1{
+	color:gold;
+	margin-top:50px;
+}
+
+#div2{
+ width:auto;
+ padding:1%;
+ background-color: rgb(100,150,250);
+ margin-top: 2%;
+ color: gold;
+}
+#div3{
+  width:auto;
+  padding:1%;
+  background-color: brown;
+  margin-bottom: 2%;
+  color: gold;
+}
+#x1{
+   display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+ 
+}
+#onedisplay{
+  background-color:rgb(100,100,250);
+  margin-left:20%;
+  margin-right:10%;
+  width:50%;
+  padding:5%;
+  color: white;
+}
+#btncancel{
+ float: right;
+}
+/* ############################# JavaScript elements ############################### */
+#leave{
+	font-size:20px;
+	color: orange;
+	text-align:center;
+}

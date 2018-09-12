@@ -1,0 +1,107 @@
+<!--this file displays COOKIE POLICy STATEMENT plus has JS code which handle with displaying this statement 
+plus sets cookies that decide if message is display for new users or not be displayed for comming back users(with set cookie=cookiepolicy)
+-->
+
+<! DOCTYPE Html>
+<html>
+<head>
+<title>eMediaShop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/cookie.css">
+
+</head>
+<body>
+
+
+<div id="cookie">
+ <div id="cookie1">
+   <h3> Cookie policy statement</h3>
+ </div>
+ <div id="cookie2">
+		 <p> 
+		  According to last changes in privacy law about collecting data we would like to inform our users </br>
+		 
+		 that by using our website you agree with our policy and accept that.</br></br></br>
+		 
+		 we use cookies and other tracking techniques,  To make our shop more user friendly and display more
+
+		 personalised messages.</br>
+
+		 We collect the data about your an activity online. </br>
+		 
+		 We use this data for a number of reasons:</br></br>
+
+		 Using collected data we analyse our online traffic.</br>
+		 
+		 We use gathered data from tracking to understand user behavior and to help us 
+
+		 improve the website.</br>
+		 
+		 We use our own cookies to store session and settings data. </br>
+
+		 We use gathered data about users to display and recommend them better matching
+
+		 products, offers and ads. </br>
+		 
+		 We also collect informations such as : </br>
+		 
+		 Device attributes: operating system, hardware and software 
+
+		 versions, IP address , browser type. </br>
+		 
+		 Device operations: information about operations and behaviours performed on the device,</br> 
+		 
+		 such as mouse movements (which can help distinguish humans from bots), buttons clicks ,</br> 
+		 
+		 login time , time spent on website or which site is visited the most. </br>
+
+		 By clicking "Accept" button" bellow or using this website you allow us to colled data using cookie and other technologies.
+		 
+		 You can disable cookie in your browser.
+
+		 </p>
+  </div>
+  <div id="cookie3">
+   <button button type="button" onclick="setCookie()" id="btnOne" class="btn btn-primary"> Accept</button>
+   </div>
+</div>
+<script>
+// line below- just keep to not delete all cookie in browser all the time for testing purpos - deletes cookie="cookiepolicy"
+//document.cookie = "cookiepolicy=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+
+// function sets a cookie which is fired onclick button id "one" 
+function setCookie(){
+	x = document.getElementById("cookie");
+	x.style.display = "none";
+	document.cookie = "cookiepolicy = yes; expires= Fri,17 Jul 2020 20:33 UTC";
+
+}
+</script>
+<script>
+//function to get cookie value from several cookie - ustawione recznie do cookie odpoalonego z guzika "one"
+var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)cookiepolicy\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+//this function displaies value of cookie - if exists/ but now commented to block
+//function alertCookieValue(){
+  //alert(cookieValue);
+//}
+</script>
+<script>
+var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)cookiepolicy\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+// this IF statement set if cookie has a value "yes" from cookie named = cookiepolicy then not display div elementFromPoint
+// if not set then display div element
+if(cookieValue === "yes"){
+	document.getElementById("cookie").style.display = "none";
+}else{
+	document.getElementById("cookie").style.display = "block";
+}
+
+</script>
+
+
+</body>
+</html>

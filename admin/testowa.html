@@ -1,0 +1,88 @@
+<! DOCTYPE html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- button -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="../css/style.eshop.css">
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+	  <div class='col-md-5' >
+		<h3> Users' rating:</h3>
+	  </div>	
+		<div class='col-md-2'>
+		<h3><strong> 4,5 </strong></h3>
+	   </div>
+	</div>
+</div>
+
+<div class='container'>
+    <div class='row'>
+	  <div class='col-md-8'>
+		<h3> Check here others opinions: hoverover</h3>
+	  </div>	
+		
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+<?php
+
+// wklej to do productrating.php zamiast query to DB to COUNT(AVR()) on collected in DB values
+// kod do wyswietlenia listy produktow z srednimi ocenami. wyswietle jako rekomendacja. przydaloby sie nazwa produktu,
+//ale wtedy musisz podac najpierw w formie POSTem do productrating i REPLACE w tabeli - stowrz kolumne w tabeli najpierw
+
+echo '<table>\n';
+echo  '<tr><th>Product_id</th><th>Average rating</th></tr>';
+
+$sql_average = "SELECT product_id,product_type,ROUND(AVG(grade),1) AS AverageRating
+                FROM rating
+				GROUP BY product_id";
+				
+				while($row = mysqli_fetch_assoc($sql_average)){
+				
+				echo '<tr><td>$row['product_id']</td><td>$row['AverageRating']</td></tr>';
+				
+				}
+echo '</table>';
+
+
+
+
+
+
+foreach ($storeids as $storeid) {
+  $result = mysql_query("SELECT AVG(rating) AS rating FROM reviews GROUP BY store_id WHERE store_id = '$storeid'");
+  while ($row = mysql_fetch_assoc($result)) {
+    echo $row['rating'];
+  }
+}
+
+foreach ($row as $id => $rating ){
+     echo '{$key} => {$value}';
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+

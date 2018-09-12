@@ -1,0 +1,217 @@
+<! Doctype HTML>
+<html>
+<head>
+<title>eMediaShop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="forms.js"></script>
+<link rel="stylesheet" href="../css/style1.css">
+<style>
+
+#div2{
+  widht:80%;
+  height: auto;
+  background-color: rgb(150,150,100);
+  text-align:center;
+  margin-top:2%;
+}
+#div3{
+  background-color: rgb(220,100,50);
+  width:30%;
+  height:auto;
+  margin-top:200px;
+}
+#cookie{
+  width:50%;
+  height:auto;
+  background-color:rgb(220, 228, 242);
+}
+#register1{
+
+display: none; 
+ 
+}
+#register2{
+
+display:none;
+}
+#div4{
+  width:300px;
+  height:300px;
+  background-color:pink;
+  
+}
+#one{
+  visibility = "visible";
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="setcookie()"> set cookie</button>
+
+<script>
+function setcookie(){
+   
+   if (document.cookie.split(';').filter((item) => item.includes('reader=')).length) {
+    console.log('The cookie "reader" exists')
+}
+   //document.cookie = "cookieOx= cookie1;expires = Sat,14 Jul 2018 22:00:00GMT";
+   
+   }
+ 
+var y = document.cookie;
+
+
+</script>
+<div id="div4">
+  <h4>here is a cookie Jar</h4>
+  <p id="one"></p>
+</div>
+
+
+<div id="div3">
+<h3>Register and get free videoGame</h3>
+</div>
+<button type="button" class="btn btn-warning" onclick="showDiv()"> Register XXX</button>
+
+<div id="register1"> 
+     <div class="col-sm-3" id="one">
+     <b>New here?</br>Register to start. All fields are required.</b>
+	 <form class="form" method="POST" action="checkRegistration.php">
+	   <div class="form-group">
+	    <label for="form"> Create your profil </label></br>
+        <input type="username" class="form-control" id="user" placeholder="username" name="username">
+       </div></br>
+       <div class="form-group">
+        <input type="email" class="form-control" id="email2" placeholder="your email" name="email">
+       </div></br>
+       <div class="form-group">
+        <input type="password" class="form-control" id="pswd1" placeholder="enter password" name="pswd">
+       </div></br>		
+	   <div class="form-group">
+	    <input type="password" class="form-control" id="pswd2" placeholder="confirm password" name="pswd2">
+	   </div></br>
+	   <div class="form-group">
+	    <input type="fname" class="form-control" id="fname" placeholder="first name" name="fname"> 
+	   </div></br>
+	   <div class="form-group">
+	     <input type="lname" class="form-control" id="lname" placeholder="last name" name="lname">
+		</div>
+		<div class="form-group">
+		  <label for="age"><input type ="checkbox" class="form-check-input" name="age1" value="18-30"> 18-30</label>
+		  <label for="age"><input type ="checkbox" class="form-check-input" name="age2" value="30-45"> 30-45</label>
+		  <label for="age"><input type ="checkbox" class="form-check-input" name="age3" value="45-60"> 45-60</label>
+		  <label for="age"><input type ="checkbox" class="form-check-input" name="age4" value=">60"> 60+ </label> 
+		</div>
+		<div class="form-group">
+		  <label for="hobby"> Hobby </label>
+		  <select class="form-control" id="selectHobby">
+		    <option> Hiking </option>
+			<option> Sport </option>
+			<option> Electronics </option>
+			<option> Cars </option>
+			<option> Traveling </option>
+			<option> Other...</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<p> if other...what's your hobby?</p>
+			<textarea class="form-control" id="otherHobby" rows="3"></textarea>
+		
+		</div>
+		<div class="form-group">
+		  <label for="socialmedia"> What is your favourite social media ? </label>
+		  <select class="form-control" id="selectMedia">
+		    <option> Facebook </option>
+			<option> Twitter </option>
+			<option> G + </option>
+			<option> Pinterest </option>
+			<option> YouTube </option>
+			<option> LinkedIn </option>
+			<option> None </option>
+			</select>
+		</div>
+		
+		
+		<label for="gender">Gender</label>
+		<div class="checkbox">
+	    <label><input type="checkbox" class="form-check-input" name="bio" value="M"> Male</label>
+		<label><input type="checkbox" class="form-check-input" name="bio" value="F"> Female</label>
+		<label><input type="checkbox" class="form-check-input" name="bio" value="O"> Other</label>
+	  </div>
+		<button type="submit" class="btn btn-success"> Create an account</button> 
+	 </form>
+   </div>
+</div>
+
+<div id="div3">
+ <h3>Basic registration</h3>
+</div>
+<button type="button" class="btn btn-info" onclick="showDivTwo()"> Register </button>
+<div id="register2"> 
+     <div class="col-sm-3" id="one">
+     <b>New here?</br>Register to start. All fields are required.</b>
+	 <form class="form" method="POST" action="checkRegistration.php">
+	   <div class="form-group">
+	    <label for="form"> Create your profil </label></br>
+        <input type="username" class="form-control" id="userB" placeholder="username" name="username">
+       </div></br>
+       <div class="form-group">
+        <input type="email" class="form-control" id="email2B" placeholder="your email" name="email">
+       </div></br>
+       <div class="form-group">
+        <input type="password" class="form-control" id="pswd1B" placeholder="enter password" name="pswd">
+       </div></br>		
+	   <div class="form-group">
+	    <input type="password" class="form-control" id="pswd2B" placeholder="confirm password" name="pswd2">
+	   </div></br>
+	   <div class="form-group">
+		  <label for="socialmedia"> What is your favourite social media ? </label>
+		  <select class="form-control" id="selectHobbyB">
+		    <option> Facebook </option>
+			<option> Twitter </option>
+			<option> G + </option>
+			<option> Pinterest </option>
+			<option> YouTube </option>
+			<option> LinkedIn </option>
+			<option> None </option>
+			</select>
+		</div>
+	
+		<button type="submit" class="btn btn-success"> Create an account</button> 
+	 </form>
+   </div>
+   
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

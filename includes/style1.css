@@ -1,0 +1,58 @@
+body{
+	background:linear-gradient(to right,rgb(92, 85, 214),rgb(64, 58, 168));
+	}
+h1,h2,h3,h4{
+	color:black;
+	}
+#header{
+	background-color:rgb(166, 185, 216);
+    }
+#one{
+	height:75%;
+	background-color:rgb(15,73,168);
+	color:white;
+}
+#registerform{
+	clear:none;
+}
+#two{
+	height:75%;
+	background-color:rgb(119, 143, 183);
+}
+#three{
+	height:75%;
+	background-color:rgb(15, 73, 168);
+}
+#form{
+	float:right;
+	width:30%;
+	color:white;
+}
+#button{
+	background-color:rgb(78, 140, 12);
+}
+#four{
+	background-color:rgb(193, 49, 44);
+	height:30%
+}
+#five{
+	background-color:rgb(229, 78, 73);
+	height:30%
+}
+#six{
+	background-color:rgb(193, 49, 44);
+	height:30%
+}
+#footer1{
+	text-align:center;
+	color: white;
+}
+#footer2{
+	text-align:left;
+	color:white;
+}
+#jumbo1{
+	width: 80%;
+	margin: 3%;
+	text-align:center;
+}

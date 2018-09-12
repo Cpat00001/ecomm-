@@ -1,0 +1,67 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title> html test 4</title>
+</head>
+<style>
+
+#one{
+	width: 200px;
+	height:200px;
+	background-color: red;
+	display = "none";
+	
+}
+
+</style>
+<body>
+
+<div id="one"></div>
+<p id="two"></p>
+//<script>
+//these two line below delete cookies by assigned name=value pair
+//document.cookie = "cookiepolicy=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+//document.cookie = "username=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+//</script>
+
+<script>
+// function sets a cookie which is fired onclick button id "one" 
+function setCookie(){
+	x = document.getElementById("one");
+	x.style.display = "none";
+	document.cookie = "cookiepolicy = yes; expires= Fri,17 Jul 2020 20:33 UTC";
+
+}
+</script>
+<button button type= "button" onclick="setCookie()"> ACCEPT POLICY </button>	
+
+<script>
+//function to get cookie value from several cookie - ustawione recznie do cookie odpoalonego z guzika "one"
+var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)cookiepolicy\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+//this function displaies value of cookie - if exists/ but now commented to block
+function alertCookieValue(){
+  alert(cookieValue);
+}
+</script>
+<button button type="buton" onclick="alertCookieValue()">alert cookie value</button>
+
+
+<script>
+var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)cookiepolicy\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+// this IF statement set if cookie has a value "yes" from cookie named = cookiepolicy then not display div elementFromPoint
+// if not set then display div element
+if(cookieValue === "yes"){
+	document.getElementById("one").style.display = "none";
+}else{
+	document.getElementById("one").style.display = "block";
+}
+
+</script>
+
+
+
+
+</body>
+</html>

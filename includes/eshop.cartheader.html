@@ -1,0 +1,49 @@
+
+<! DOCTYPE html>
+<!-- eshop.cartheader -->
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.eshop.css">
+ 
+</head>
+<body>
+
+<div class="row" id="header">
+  <div class="col-sm-6">
+     <h3 style="color:white";>eMediaShop</h3>
+     <b> e-books , movies , games , comics, entertainment...<b>
+   </div>
+   <div class="col-sm-3" id="two">
+     <a href="http://localhost/ecomm/includes/home.php" class="btn btn-info" id="but1" role="button"style="color:white";>Logout</a>
+   </div>
+</div>
+<nav class="navbar navbar-light" style= "
+			<?php 
+			if(isset($_COOKIE['shopcolor'])){	
+			   echo "background-color: #".($_COOKIE['shopcolor']).";\n";
+			}else{
+				echo "background-color: brown;";
+			}  
+			?> ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-hand-right"></span>  <b style="color:white;">Menu...</b>
+	<small style="color:white";>choose a category</small></a>
+	</div>
+	<form class="form-inline">
+	  <div class="col-md-6" id="headertwo">
+	    <a href="http://localhost/ecomm/includes/catalogue1.php" class="btn btn-info" role="button" > eBooks, Comics</a>
+	    <a href="http://localhost/ecomm/includes/catalogue2.php" class="btn btn-info" role="button"> Movies </a>
+	    <a href="http://localhost/ecomm/includes/catalogue3.php" class="btn btn-info" role="button">VideoGames</a>
+		<a href='http://localhost/ecomm/includes/eshop.php' class="btn btn-warning" role="button"> Back to shopping</a>
+		</form>
+	  </div>
+	</form>
+</nav>	
+  
+
+</body>
+</html>

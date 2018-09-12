@@ -1,0 +1,440 @@
+body{
+	background:linear-gradient(to right,rgb(92, 85, 214),rgb(64, 58, 168)); 
+	}
+/*+++++++++ header +++++*/
+#customizecolor{
+    background-color:rgb(221,82,96);
+}
+#selectbut{
+	color: white;
+}
+
+/* ++++++++++++ body +++++++++++++ */	
+
+#two{
+	color:rgb(200,200,200);
+	float:right;
+	padding-top:50px;
+	padding-right:1%;;
+	text-align:right;
+}
+#search1{
+	width:50%;
+	height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#search2{
+	background-color:#5bc0de;
+	color:#fff;
+	border-color:#46b8da;
+	padding:6px 12px;;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	touch-action: manipulation;
+    cursor: pointer;
+	user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	
+}
+#but1{
+	margin-bottom:2%;
+}
+#headerone{
+	float:right;
+	text-align:right;
+	padding:1%;
+	width:70%;
+	color:white;
+	font-size: 18px;
+    line-height: 20px;
+	font-weight: 700;
+}
+#headertwo{
+	padding:1%;
+	width:70%;
+}
+
+#catdiv1{
+	width:50%;
+	height:auto;
+	background-color:rgb(190,180,220);
+	margin-left:2%;	
+}
+#bodypic3{
+	height:auto;
+	opacity: 0.7;
+	
+}
+#bodypic3:hover{
+	opacity:1.0;
+}
+#bodypic2{
+	height:auto;
+	opacity: 0.7;
+	
+}
+#bodypic2:hover{
+	opacity:1.0;
+}
+#bodypic1{
+	height:auto;
+	opacity: 0.7;
+	
+}
+#bodypic1:hover{
+	opacity:1.0;
+}
+#hcolor{
+	color: orange;
+}
+
+/* ########################################## body / footer ############################ */
+#header{
+	background:linear-gradient(to right,rgb(166, 185, 216),rgb(190,180,220)); 
+	margin:2px;
+}
+
+#footer{
+	background:rgb(200,200,200);
+	width:100%;
+}
+#onebody{
+	background-color:rgb(39, 137, 181);
+	height:350px;
+	margin-bottom:3%;
+}
+#twobody{
+	background-color:rgb(50,100, 100);
+	height:300px;
+	color: white;
+	float:left;
+}
+#threebody{
+	background-color:rgb(100, 150, 100);
+	height:300px;
+	float:left;
+	
+}
+#fourbody{
+	background-color:rgb(50,100, 100);
+	height:300px;
+	float:left;
+	/* rgb(7, 158, 42) */
+	
+}
+
+#text{
+	color:white;
+}
+/*+++++++++++++ social button +++++++++++++++++++++*/
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #00aff0;
+    color: white;
+	width:33%;
+	float:left;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width:33%;
+    float:left;	
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  width:33%;
+  float:left;  
+}
+
+
+/* ###################  product catalogue1,2,3,4 #### tables, buttons ################# */
+#item-list{
+	
+	border-top:2px solid red;
+	border-bottom:1px solid red;
+	padding:2%;
+}
+#catdiv2{
+	background-color:rgb(64, 65, 84);
+	color:white;
+	padding:0.5%;
+	clear:left;
+}
+#catbutton{
+   padding:2%;
+   margin:1%;
+   margin-left: 50%;
+   width: 50%;
+       
+}
+#catbutton3{
+   padding:2%;
+   margin:1%;
+   margin-left: 50%;
+   width: 50%;
+       
+}
+#catbutton2{
+   padding:2%;
+   margin:1%;
+   width: auto;	
+}
+
+
+#text{
+	color:white;
+}
+#errormess{
+	background-color:rgb(221, 82, 96);
+	height:auto;
+	padding:2%;
+	color:white;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*######################### shipping cart section ################################################ */
+
+#ship1{
+	background-color:rgb(190, 180, 220);
+	margin:0 auto;
+	float: none;
+	width:70%;
+	height:auto;
+	text-align:center;
+	padding:1%;
+	
+}
+#ship2{
+	background-color:rgb(74, 143, 239);
+	margin:0 auto;
+	float: none;
+	height:auto;
+	text-align:center;
+	padding:1%;
+	
+}
+#ship3{
+	margin:0 auto;
+	float:none;
+	padding:1%;
+}
+#ship4{
+	color:black;
+}
+/* ##########################  shipping confirmation  ############################################################# */
+#confirm1{
+	background-color:rgb(191, 210, 242);
+	height: auto;
+	text-align:center;
+	padding:2%;
+}
+
+/*#################################  product's cart design  #################################################### */
+#prodone{
+	background-color: rgb(215,227,247);
+	height:50%;
+}
+#prodtwo{
+	background-color: rgb(173, 189, 247);
+	height:50%;
+}
+#ratingbut{
+	color: rgb(51, 51, 51);
+	font-family: Helvetica;	
+}
+#backbutton{
+	margin-bottom: 2%;
+}
+/*############################ rating and comments section in product cart ################################*/
+#ratintoggle{
+	background-color: rgb(226, 68, 81);
+	text-align: center;
+	color: white;
+	clear:right;
+}
+
+#ratingone{
+	background-color: rgb(226, 68, 81);
+	text-align: center;
+	color: white;
+}
+#ratingtwo{
+	background-color: rgb(237, 158, 165);
+	text-align: center;
+	color: white;
+}
+#ratingthree{
+	background-color: rgb(226, 68, 81);
+	text-align: center;
+	color: rgb(43,54,71);
+	margin-top:5%;
+	width:60%;
+	display: none; /* Hidden by default */
+}
+/*############################ recommendation at the bottom section ############################*/
+#recomm1{
+	background-color:rgb(185, 204, 234);
+	width:40%;
+	text-align: center;
+}
+/* ######################  div element to showNewsletter function ehsop.header.php  ######################################### */
+#newsletter{
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+	color:black;
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+	float:right;
+	text-align:center;
+	padding:1%;
+}
+/* ############################ checknewsletter.php ############################################ */
+#newsdiv1{
+	text-align:center;
+	text-size:14px;
+}
+#but2{
+  width:80%;
+  margin-left:10%;
+	
+}
+/* #################### ratingbanner section displayed on catalogue2.php ###################*/
+#ratingbanner{	
+  width:70%;
+  margin:auto;
+  padding:1%;
+  display: none; /* Hidden by default */
+  text-align: center;
+  position: sticky; /* makes banner sticky althought user scroll down/up page */
+  z-index: 1; /* Sit on top - means be displayed at the fron of others elements on page */
+  top: 150px; /* set distance between top of page and displaying banner */
+}
+#banner3{
+	text-align:center;
+	color:white;
+	margin-bottom:1%;
+}
+/* ##############  element of onmouseover recommendation   ################################### */
+#recom1{
+	background-color:lightgrey;
+	text-align:center;
+	padding:1%;
+	height:100px;
+	margin-top:1%;
+}
+/* ###################### elements of click.event from trackonmedia.php ############### */
+#recom2{
+	clear:left;
+	background-color:lightgrey;
+	text-align:center;
+	padding:1%;
+	height:100px;
+	margin-top:1%;
+}
+/* ################### elements of mostviewed product_id from tracker4, file mostviewed_id.php / browsinghistory.php ####### */
+#recom3{
+	clear:left;
+	background-color:lightgrey;
+	text-align:center;
+	padding:1%;
+	height:100px;
+	margin-top:1%;
+}
+#recom4{
+	background-color:orange;
+	widht:90%;
+	height:20px;
+	text-align:center;	
+}
+#recom5{
+	background-color:orange;
+	widht:100%;
+	height:20px;
+	text-align:center;
+	margin-bottom:1%;
+}
+/* ################ survey section included on eshop.php at the bottom ################# */
+#sur1{
+	background-color:rgb(81, 163, 204);
+	height:200px;
+	padding: 1%;
+	text-align:center;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+#sur2{
+	background-color:rgb(97, 183, 226);
+	height:200px;
+	margin-top:1%;
+}
+#sur3{
+	background-color:rgb(190, 180, 220);
+	margin:0 auto;
+	float: none;
+	width:70%;
+	height:auto;
+	text-align:center;
+	padding:1%;
+	margin-bottom: 2%;
+	font-weight:bold;
+}
+#sur4{
+	color: white;
+	margin-bottom:1%;
+}
+#surbut{
+	width:60%;
+    margin-left:20%;
+	margin-bottom:1%;
+	
+}
+#notmatch{
+	
+	background-color: red;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
